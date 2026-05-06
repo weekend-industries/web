@@ -1,8 +1,7 @@
 locals {
   vercel_cnames_map = {
     www = {
-      name    = "www.eslee.io"
-      content = "31001004ba3b35ab.vercel-dns-017.com."
+
     }
   }
 }
