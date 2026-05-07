@@ -30,3 +30,21 @@ resource "cloudflare_dns_record" "weekend_industries_root" {
   ttl     = 1
   proxied = false
 }
+
+resource "cloudflare_dns_record" "weekend_industries_www" {
+  zone_id = var.cloudflare_zone_id
+  type    = "A"
+  name    = "www.weekend.industries"
+  content = "216.198.79.1"
+  ttl     = 1
+  proxied = false
+}
+
+resource "cloudflare_dns_record" "weekend_industries_www_2" {
+  zone_id = var.cloudflare_zone_id
+  type    = "A"
+  name    = "www.weekend.industries"
+  content = "216.198.79.65"
+  ttl     = 1
+  proxied = false
+}
