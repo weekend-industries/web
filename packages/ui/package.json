@@ -1,5 +1,5 @@
 {
-  "name": "@repo/ui",
+  "name": "@weekend/ui",
   "version": "0.0.0",
   "private": true,
   "exports": {
@@ -11,7 +11,7 @@
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@weekend/typescript-config": "workspace:*",
     "@types/node": "^22.15.3",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
