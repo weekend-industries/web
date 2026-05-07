@@ -9,7 +9,7 @@ locals {
 
 # ? Dynamic CNAME records that point to the new vercel DNS records
 # ? https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/dns_record
-resource "cloudflare_dns_record" "eslee_io_vercel_cnames_map" {
+resource "cloudflare_dns_record" "weekend_industries_vercel_cnames_map" {
   for_each = local.vercel_cnames_map
 
   zone_id = var.cloudflare_zone_id
@@ -22,7 +22,7 @@ resource "cloudflare_dns_record" "eslee_io_vercel_cnames_map" {
 
 
 # ? Homepage (Manual Config)
-resource "cloudflare_dns_record" "eslee_io_root" {
+resource "cloudflare_dns_record" "weekend_industries_root" {
   zone_id = var.cloudflare_zone_id
   type    = "A"
   name    = "@"
