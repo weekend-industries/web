@@ -1,8 +1,9 @@
 locals {
   vercel_cnames_map = {
-    www = {
-
-    }
+    # www = {
+    #   name    = "example.weekend.industries"
+    #   content = ""
+    # }
   }
 }
 
