@@ -1,5 +1,5 @@
 {
-  "name": "weekend",
+  "name": "@weekend/root",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -7,15 +7,16 @@
     "lint": "turbo run lint",
     "format": "biome format --write .",
     "check": "biome check .",
+    "check:fix": "biome check --write .",
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.14",
-    "turbo": "^2.9.9",
-    "typescript": "5.9.2"
+    "@biomejs/biome": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.29.2",
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   }
 }
